@@ -1,0 +1,38 @@
+IDEA 1 (Hash partial files)
+Node generates key, decide on random node
+Passes key and file to random node to random node
+Random node generates key and encrypts part of file + previous key + decide on another random node
+Random node passes to another random node
+
+Node 1
+(Passed On)
+- Key 1
+- File
+
+Node 2
+(Encrypted with Key 1) VALUE
+- Key 2
+- Part of File
+
+(Non-Encrypted) KEY
+- Hash of File Before Part Taken
+
+(Passed On)
+- Key 2
+- Rest of File
+
+Node 3
+(Encrypted with Key 2) VALUE
+- Key 3
+- Part of File
+
+(Non-Encrypted) KEY
+- Hash of File Before Part Taken
+
+(Passed On)
+- Key 3
+- Rest of File
+
+Node 4
+
+Node 5
